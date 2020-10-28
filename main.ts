@@ -1,3 +1,15 @@
+basic.showIcon(IconNames.Yes)
+let strip = neopixel.create(DigitalPin.P2, 12, NeoPixelMode.RGB)
+strip.setBrightness(15)
+strip.showRainbow(1, 360)
+basic.showIcon(IconNames.Angry)
+strip.clear()
+strip.show()
+let range = strip.range(9, 3)
+range.showColor(neopixel.colors(NeoPixelColors.Green))
+let body = strip.range(0, 9)
+body.showColor(neopixel.colors(NeoPixelColors.Yellow))
+strip.show()
 basic.forever(function () {
 	
 })
